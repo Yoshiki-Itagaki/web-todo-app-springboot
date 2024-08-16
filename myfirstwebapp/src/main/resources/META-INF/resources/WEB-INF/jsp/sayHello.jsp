@@ -8,5 +8,7 @@
 </head>
 <body>
 	<h1>sayHello JSP</h1>
+	<h2>sayHello JSP</h2>
+	<p>My first html page with body - JSP</p>
 </body>
 </html>
