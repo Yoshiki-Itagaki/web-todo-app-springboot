@@ -18,7 +18,7 @@ public class Todo {
 	private String description;
 	private LocalDate targetDate;
 	private boolean done;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -57,6 +57,12 @@ public class Todo {
 
 	public void setDone(boolean done) {
 		this.done = done;
+	}
+
+	@Override
+	public String toString() {
+		return "Todo [id=" + id + ", username=" + username + ", description=" + description + ", targetDate="
+				+ targetDate + ", done=" + done + "]";
 	}
 
 }
