@@ -2,16 +2,16 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Welcome Page</title>
-</head>
-<body>
-	<h1>Login JSP</h1>
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome Page</title>
+	</head>
 	<body>
-		<div>Welcome to in28minutes</div>
-		<div> Your Name: ${name}</div>
+		<body>
+			<div>Welcome, ${name}</div>
+			<hr>
+			<div><a href="list-todos">Manage</a> your todos</div>
+		</body>
+		
 	</body>
-	
-</body>
 </html>
