@@ -7,13 +7,10 @@
 <title>Login Page</title>
 </head>
 <body>
-	<h1>Login JSP</h1>
+	<h1>Login</h1>
 	<body>
 		<div class="container">
-			<h1>Login<h1>
-			
-			<pre>${errorMessage}</pre>
-			
+			<pre>${errorMessage}</pre>			
 			<form method="post">
 				Name: <input type="text" name="name">
 				Password: <input type="password" name="password">
