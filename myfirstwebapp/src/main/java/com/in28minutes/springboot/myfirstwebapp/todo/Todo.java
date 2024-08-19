@@ -20,6 +20,10 @@ public class Todo {
 		this.done = done;
 	}
 	
+	public Todo() {
+		
+	}
+	
 	@Id
 	@GeneratedValue
 	private int id;

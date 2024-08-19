@@ -43,15 +43,12 @@ public class SpringSecurityConfiguration {
 	
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-	  http
-	      .csrf(csrf -> csrf
-	          .ignoringRequestMatchers("/h2-console/**")
-	      .disable()
-		  )
-		  .authorizeHttpRequests(auth -> auth
-				  .requestMatchers("/h2-console/**").permitAll()
-	      )
-		  .headers(headers -> headers.frameOptions(FrameOptionsConfig::disable));
+	  http.authorizeHttpRequests(
+			  auth -> auth.anyRequest().authenticated());
+	  http.formLogin();
+	  
+	  http.csrf().disable();
+	  http.headers().frameOptions().disable();
 	  return http.build();
 	}
 	
